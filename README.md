@@ -27,12 +27,17 @@ python project.py
 uvicorn app:app --reload
 ```
 
+![fastapi](https://github.com/user-attachments/assets/b340b5aa-0c41-4670-bec3-1a88a8921de5)
+
+
 ## Deploying using docker
 
 ```bash
 docker build -t ubuntu-chatbot .
 docker run -p 80:80 ubuntu-chatbot
 ```
+
+![docker_deploy](https://github.com/user-attachments/assets/e1c82d16-b467-42f3-a174-2550f7512004)
 
 ## Chunking
 
