@@ -1,4 +1,4 @@
-# Ubuntu Chatbot
+# Q&A Chatbot with Vector Store
 
 ## Installation
 
