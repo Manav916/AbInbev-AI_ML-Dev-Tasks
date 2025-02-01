@@ -1,4 +1,4 @@
-**Chain-of-Thought Decoding**
+## Chain-of-Thought Decoding
 
 CoT often relies on prompting. And this approach mostly introduces human biases and requires manual engineering. CoT-Decoding is a method that elicits reasoning capabilities from LLMs without prompting, by modifying the decoding process.
 
@@ -6,7 +6,8 @@ CoT often relies on prompting. And this approach mostly introduces human biases 
 
 CoT-Decoding follows a structured process to uncover reasoning paths hidden within a model's decoding trajectory.
 
-![][image1]
+![CoT_decoding drawio](https://github.com/user-attachments/assets/7f4051b2-0d28-40fe-ab5b-014d9d80057e)
+
 
 #### **1\. Input Formulation**
 
@@ -27,7 +28,9 @@ CoT-Decoding follows a structured process to uncover reasoning paths hidden with
 
 #### **4\. Computing Confidence Scores for Each Path**
 
-* This is done using **logits (probabilities assigned to tokens) during decoding**. The model’s **confidence in each answer** is calculated using the formula:![][image2]
+* This is done using **logits (probabilities assigned to tokens) during decoding**. The model’s **confidence in each answer** is calculated using the formula:
+  
+![Screenshot 2025-02-01 at 9 14 23 PM](https://github.com/user-attachments/assets/cf72fbd3-79b0-4d32-92ec-058c9f2723a0)
 
 * A **larger probability gap** between the **top-1 and top-2** tokens indicates **higher confidence** in the chosen answer.  
 * If the model is **equally uncertain** between multiple choices, the difference is smaller, meaning **low confidence**.  
