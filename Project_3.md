@@ -1,4 +1,4 @@
-## Chain-of-Thought Decoding
+**Chain-of-Thought Decoding**
 
 CoT often relies on prompting. And this approach mostly introduces human biases and requires manual engineering. CoT-Decoding is a method that elicits reasoning capabilities from LLMs without prompting, by modifying the decoding process.
 
