@@ -1,4 +1,4 @@
-# Project 1 Q&A Chatbot with Vector Store
+# Project 1: Q&A Chatbot with Vector Store
 
 ## Installation
 
